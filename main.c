@@ -2,13 +2,22 @@ pseudo code
 {
 Initial Function()
 {
-  //Sample Code
+  git checkout master
+git pull
+make world
+make check-world
 }
 
-feaature2()
+feature2()
 {
-  //Sample Code for Feature 2
+  git format-patch -v1 master --base master
+  git checkout reindex-concurrently
+git merge master
+# possibly conflict resolution
+make world
+make check-world
 }
+
 
 
 }
